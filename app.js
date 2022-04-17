@@ -1,11 +1,15 @@
 require('dotenv').config()
 
+// imports
 const cookieParser = require('cookie-parser');
 const express = require("express");
 const mongoose = require('mongoose');
-const app = express();
 const bodyParser= require("body-parser");
 const cors= require("cors");
+
+
+const app = express();
+
 
 // routes import here
 const authRoutes = require("./routes/auth.js");
